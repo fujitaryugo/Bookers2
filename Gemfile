@@ -51,6 +51,13 @@ group :development do
 end
 
 group :test do
+      gem 'rspec-rails'
+    gem "factory_bot_rails"
+    gem 'rspec-parameterized'
+    gem 'faker'
+    gem 'shoulda-matchers'
+    gem 'rails-controller-testing'
+
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
@@ -60,3 +67,12 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'jquery-rails'
+
+gem 'devise'
+
+gem "refile", require: "refile/rails", github: 'manfe/refile'
+gem "refile-mini_magick"
